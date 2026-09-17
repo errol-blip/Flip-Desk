@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <style>
+    body { font-family: -apple-system, system-ui, sans-serif; width: 240px; padding: 14px; color: #14171C; }
+    h1 { font-size: 14px; margin: 0 0 8px; }
+    p { font-size: 12px; color: #6B6F76; margin: 0 0 10px; }
+    button { width: 100%; background: #2E5CE0; color: white; border: none; padding: 8px; border-radius: 6px; font-size: 12px; font-weight: 500; cursor: pointer; }
+    .dot { display: inline-block; width: 7px; height: 7px; border-radius: 50%; margin-right: 6px; }
+    .ok { background: #1F8A5C; }
+    .err { background: #B8452F; }
+  </style>
+</head>
+<body>
+  <h1>Flip Desk</h1>
+  <p id="status"><span class="dot err"></span>Not connected</p>
+  <button id="openOptions">Open Settings</button>
+  <script src="popup.js"></script>
+</body>
+</html>

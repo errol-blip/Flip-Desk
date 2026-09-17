@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply bg-paper text-ink;
+  }
+  body {
+    @apply antialiased;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-surface border border-line rounded-card;
+  }
+  .stat-value {
+    @apply text-2xl font-semibold tabular-nums tracking-tight;
+  }
+  .stat-label {
+    @apply text-sm text-muted;
+  }
+}

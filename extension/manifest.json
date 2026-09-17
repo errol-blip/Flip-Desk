@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Flip Desk for MAC.BID",
+  "version": "0.1.0",
+  "description": "Live Flip Score, max bid, and eBay comparables overlay while browsing MAC.BID. Connects to your own self-hosted Flip Desk app.",
+  "permissions": ["storage"],
+  "optional_host_permissions": ["<all_urls>"],
+  "host_permissions": ["https://www.mac.bid/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Flip Desk"
+  },
+  "options_page": "options.html",
+  "content_scripts": [
+    {
+      "matches": ["https://www.mac.bid/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
